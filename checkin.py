@@ -17,7 +17,7 @@ def start():
     url2= "https://glados.rocks/api/user/status"
     referer = 'https://glados.rocks/console/checkin'
     ua = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
-    checkin = requests.post(url,headers={'cookie': cookie ,'referer': referer, 'Content-Type': 'application/json', 'user-agent': ua},data=json.dumps({token: 'glados_network'}))
+    checkin = requests.post(url,headers={'cookie': cookie ,'referer': referer, 'Content-Type': 'application/json', 'user-agent': ua},data=json.dumps({'token': 'glados_network'}))
     state =  requests.get(url2,headers={'cookie': cookie ,'referer': referer, 'Content-Type': 'application/json', 'user-agent': ua})
    # print(res)
 
